@@ -1,5 +1,3 @@
-# Runtime 11 mins
-
 import requests
 
 RPC_URL = "https://api.mainnet-beta.solana.com"

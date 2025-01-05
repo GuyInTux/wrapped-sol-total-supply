@@ -1,11 +1,8 @@
-# Run at 2.25pm, 1/1/2025, ran 7 minutes
-# 2nd run 2.41pm, 7 minutes
 import requests
 
 API_KEY = '9b0fdbd9-aa29-4bbb-a01e-8e603f7d8392'
 HELIUS_RPC_URL = f"https://mainnet.helius-rpc.com/?api-key={API_KEY}"
-# MINT_ADDRESS = "So11111111111111111111111111111111111111112"
-MINT_ADDRESS = "jtojtomepa8beP8AuQc6eXt5FriJwfFMwQx2v2f9mCL"
+MINT_ADDRESS = "So11111111111111111111111111111111111111112"
 TOKEN_PROGRAM_ID = "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
 TOKEN_DECIMALS = 9
 
