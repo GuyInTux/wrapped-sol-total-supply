@@ -1,8 +1,11 @@
+# Runtime 11 mins
+
 import requests
 
 RPC_URL = "https://api.mainnet-beta.solana.com"
 MINT_ADDRESS = "So11111111111111111111111111111111111111112"
 TOKEN_PROGRAM_ID = "TokenkegQfeZyiNwAJbNbGKPFXCWuBvf9Ss623VQ5DA"
+TOKEN_DECIMALS = 9
 
 def get_program_accounts():
     headers = {
@@ -37,6 +40,6 @@ def calculate_total_lamports(accounts):
 response = get_program_accounts()
 accounts = response['result']
 total_lamports = calculate_total_lamports(accounts)
-total_sol = total_lamports / 10**9
+total_sol = total_lamports / 10**TOKEN_DECIMALS
 
 print(f"Total Supply for Wrapped SOL: {total_sol} wSOL")
